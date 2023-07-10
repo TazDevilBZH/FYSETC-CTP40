@@ -16,7 +16,7 @@ function set_matrix {
 function set_display {
     printf "Rotating display\n";
     xrandr --output DSI-1 --rotate $1
-    sudo python2 - <<EOF
+    sudo python3 - <<EOF
 import os
 import stat
 from screenlayout import xrandr
