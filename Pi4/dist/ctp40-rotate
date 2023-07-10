@@ -108,7 +108,7 @@ function set_display {
 
     inform "Saving display settings to $DISP_FILE";
     sudo chown `whoami` $DISP_FILE
-    python2 - <<EOF
+    python3 - <<EOF
 import os
 import stat
 from screenlayout import xrandr
